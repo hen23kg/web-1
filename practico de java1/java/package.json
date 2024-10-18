@@ -1,0 +1,16 @@
+{
+        "name": "funciones-js",
+        "version": "1.0.0",
+        "description": "Ejemplo de código Javascript",
+        "main": "no.html",
+        "scripts": {
+          "start": "serve"
+        },
+        "keywords": ["html", "css"],
+        "author": "hendy",
+        "license": "MIT",
+        "devDependencies": {
+          "serve": "11.2.0"
+        }
+
+}
