@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>ADIDAS LATIF</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/buthor/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#mujer" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#hombre" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#niños" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#zapatilla" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="conten">
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+                <div class="contenido-item item-1">
+                    <a href="#item-3" class="arrow-prev arrow"></a>
+                    <a href="#item-2" class="arrow-next arrow"></a>
+                    <p id="bien">This is main heading</p>
+                    <p id="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+                    <button id="butt">Lear More</button>
+                </div>
+
+                <div class="contenido-item item-2">
+                    <a href="#item-1" class="arrow-prev arrow"></a>
+                    <a href="#item-3" class="arrow-next arrow"></a>
+                    <p id="bien">This is main heading</p>
+                    <p id="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+                    <button id="butt">Lear More</button>
+                </div>
+
+                <div class="contenido-item item-3">
+                    <a href="#item-2" class="arrow-prev arrow"></a>
+                    <a href="#item-1" class="arrow-next arrow"></a>
+                    <p id="bien">This is main heading</p>
+                    <p id="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+                    <button id="butt">Lear More</button>
+                </div>
+
+            </div>
+
+            <div class="presentacion">
+            </div>
+    </section>
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Custion Desings</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum</p>
+                <p>.</p>
+                <button class="ico">Read More</button>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Web Desings</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy
+                </p>
+                <p>.</p>
+                <button class="ico">Read More</button>
+
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Blog Pages</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy
+                </p>
+                <p>.</p>
+                <button class="ico">Read More</button>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Mobile Friendly</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy
+                </p>
+                <p>.</p>
+                <button class="ico">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Portafolio</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/op1.jpg" alt="">
+                <div class="info">
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/op2.jpg" alt="">
+                <div class="info">
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/op3.jpg" alt="">
+                <div class="info">
+
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/op4.webp" alt="">
+                <div class="info">
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/op5.jpg" alt="">
+                <div class="info">
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/op6.jpg" alt="">
+                <div class="info">
+
+                </div>
+            </div>
+
+        </div>
+        <input type="submit" value="hellow motooooo" class="btn-enviar">
+    </section>
+    <!-- SECCION TEAM -->
+    <section id="servicios1">
+        <h3 class="titulo-seccion">THE TEAM </h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class=""></i></span>
+                <h4>ADRIAN THOMAS</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>CEO</li>
+                    <li>& FONUNDER</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum</p>
+
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>NARATE KETRAM</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>CREATIVE</li>
+                    <li>DIRECTOR</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy
+                </p>
+
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class=""></i></span>
+                <h4>FERNANDO COMET</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>CEO</li>
+                    <li>& FOUNDER</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy
+                </p>
+
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class=""></i></span>
+                <h4>ADEDAYO SAHEED</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>CREATIVE</li>
+                    <li>DIRECTOR</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <!--SECCION CUADRO-->
+    <section id="servicios2">
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class=""></i>basic </span>
+                <span class="icono1"><i class=""></i>$ 5.01 / MONTH </span>
+                <span class="icono1"><i class=""></i>loren ipson </span>
+                <span class="icono1"><i class=""></i>loren ipson </span>
+                <span class="icono1"><i class=""></i>loren ispon </span>
+                <span class="icono1"><i class="">
+                        <button class="ico">Buy now</button>
+                    </i></span>
+            </div>
+            <div class="servicio">
+                <span class="icono2"><i class=""></i>Pro </span>
+                <span class="icono1"><i class=""></i>$10.01/ MONTH </span>
+                <span class="icono1"><i class=""></i>loren ipson </span>
+                <span class="icono1"><i class=""></i>loren ipson </span>
+                <span class="icono1"><i class=""></i>loren ispon </span>
+                <span class="icono1"><i class="">
+                        <button class="ico1">Buy Now</button>
+                    </i></span>
+
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class=""></i>Premium </span>
+                <span class="icono1"><i class=""></i>$20.01/MONTH </span>
+                <span class="icono1"><i class=""></i>loren ipson </span>
+                <span class="icono1"><i class=""></i>loren ipson </span>
+                <span class="icono1"><i class=""></i>loren ispon </span>
+                <span class="icono1"><i class=""></i>
+                    <button class="ico">Buy Now</button>
+                </span>
+
+            </div>
+        </div>
+    </section>
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>micorreo@gmail</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>+55 55555</p>
+                    </div>
+                    <div class="info1">
+                        <a href="#" class="a1"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="a2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="a3"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>Bolivia</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad:</h3>
+                        <p>Santa Cruz</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION FOOTER -->
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

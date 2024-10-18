@@ -1,0 +1,727 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Montserrat';
+ }
+ html {
+     scroll-behavior: smooth;
+ }
+ /* *********************/
+ /* seccion I N I C I O */
+ /* *********************/
+
+ #inicio {
+    /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/op1.jpg");*/
+     background-size: cover;
+     background-position: center center;
+     height: 100vh;
+ }
+
+ #inicio .contenido header {
+     background-color: rgb(255, 255, 255);
+     position: fixed;
+     width: 100%;
+     z-index: 100;
+     top: 0;
+ }
+
+ #inicio .contenido header .contenido-header {
+     max-width: 1100px;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+ }
+
+ #inicio .contenido header .contenido-header h1 {
+     text-align: center;
+     color: #14e4dd;
+ }
+
+ #inicio .contenido header .contenido-header nav ul {
+     list-style: none;
+     display: flex;
+     align-items: center;
+ }
+
+ #inicio .contenido header .contenido-header nav ul li a {
+     text-decoration: none;
+     color: #000000;
+     margin: 0 12px;
+     font-weight: 400;
+     transition: .5s;
+ }
+
+ #inicio .contenido header .contenido-header nav ul li a:hover {
+     color: #10ebff;
+ }
+
+ #inicio .contenido header .contenido-header .redes a {
+     text-decoration: none;
+     color: #fff;
+     display: inline-block;
+     margin-left: 10px;
+     transition: .5s;
+ }
+
+ #inicio .contenido header .contenido-header .redes a:hover {
+     color: #50f6ff;
+ }
+
+ #inicio .contenido header .contenido-header .seleccionado {
+     color: #21b8da;
+ }
+ #icono-nav {
+     color: rgb(8, 217, 210);
+     display: none;
+ }
+ /*llllllllllllllll*/
+ .conten{
+    height: 700px;
+    position: relative;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid rgb(143, 142, 142);
+  }
+  
+  .contenido-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid rgb(188, 186, 186);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: linear-gradient(rgba(11, 133, 50, 0.395), rgba(13, 190, 202, 0.646)), url("img/porta1.jpg");
+    background-size: cover;
+  }
+  .item-2 {
+    background: linear-gradient(rgba(11, 133, 50, 0.395), rgba(18, 178, 170, 0.622)), url("img/porta2.jpg");
+    background-size: cover;
+  }
+  .item-3 {
+    background: linear-gradient(rgba(11, 133, 50, 0.395), rgba(14, 169, 167, 0.569)), url("img/porta3.jpg");
+    background-size: cover;
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  .conten .contenido-item #bien {
+    font-size: 43px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .conten .contenido-item #descrip {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+  }
+  #butt{
+
+    color: #ffffff;
+    background-color: rgba(0, 255, 255, 0.064);
+    text-align: center;
+    margin:3rem 20rem;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-color: #fff;
+  }
+ /* *********************/
+ /* seccion S E R V I C I O S */
+ /* *********************/
+
+ #servicios {
+     padding: 100px 15px;
+     text-align: center;
+     background-color: #ffffff;
+ }
+
+ #servicios .fila {
+     display: flex;
+     justify-content: space-between;
+     max-width: 1150px;
+     margin: 30px auto;
+ }
+
+ #servicios .fila .servicio {
+     max-width: 250px;
+     background-color: #fff;
+     padding: 30px;
+     margin: 0 5px;
+     border-radius: 5px;
+     transition: .5s;
+ }
+
+ #servicios .fila .servicio:hover {
+     box-shadow: 5px 5px 10px #3cd8ff, -5px -5px 10px #10e7ff;
+ }
+
+ #servicios .fila .servicio .icono {
+     display: inline-block;
+     width: 90px;
+     height: 90px;
+     border-radius: 50%;
+     background-color: #ffffff;
+     padding: 35px;
+     color: #10e7ff;
+     margin-bottom: 25px;
+     box-shadow: 5px 5px 5px #3cd8ff, -5px -5px 5px #10e7ff;
+
+ }
+
+ #servicios .fila .servicio .ico {
+     font-size: 25px;
+     color: #ffffff;
+     background-color: #10e7ff;
+     border: none;
+     padding: 10px;
+     border-radius: 10px;
+
+ }
+
+ #servicios .fila .servicio h4 {
+     font-size: 22px;
+     margin-bottom: 25px;
+ }
+
+ #servicios .fila .servicio hr {
+     width: 30%;
+     margin: auto;
+     color: #000;
+     margin-bottom: 25px;
+ }
+
+ #servicios .fila .servicio ul {
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     margin-bottom: 10px;
+ }
+
+ #servicios .fila .servicio p {
+     font-size: 14px;
+     line-height: 22px;
+ }
+
+
+ /* *********************/
+ /* seccion P O R T F O L I O */
+ /* *********************/
+
+ #portfolio {
+     max-width: 1400px;
+     padding: 70px 0;
+     margin: auto;
+     background-color: #ded8d8;
+ }
+
+ #portfolio .titulo-seccion {
+     text-align: center;
+     font-size: 22px;
+     text-transform: uppercase;
+     color: #08080c;
+     text-decoration: underline;
+     text-decoration-color: #d3d3d3;
+     text-decoration-thickness: 5px;
+ }
+
+ #portfolio .fila {
+     display: flex;
+     justify-content: space-between;
+     margin: 30px 0;
+ }
+
+ #portfolio .fila .proyecto {
+     max-width: 450px;
+     border: 1px solid #575454;
+     margin: 0 10px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ #portfolio .fila .proyecto img {
+     width: 100%;
+     height: 100%;
+
+ }
+
+ #portfolio .fila .proyecto:hover img {
+     filter: grayscale(0);
+ }
+
+
+
+ #portfolio .fila .proyecto:hover .info {
+     opacity: 1;
+     bottom: 0;
+ }
+
+ #portfolio .btn-enviar {
+     display: block;
+     margin: auto;
+     cursor: pointer;
+     transition: .5s;
+     padding: 10px 15px !important;
+     background-color: #10e7ff;
+     color: floralwhite;
+     font-size: 25px;
+     border: 15px;
+     padding: 10px;
+     border-radius: 10px;
+ }
+
+ /* *********************/
+ /* seccion servicios1 */
+ /* *********************/
+ #servicios1 {
+     padding: 100px 15px;
+     text-align: center;
+     background-color: #ffffff;
+ }
+
+ #servicios1 .fila {
+     display: flex;
+     justify-content: space-between;
+     max-width: 1150px;
+     margin: 30px auto;
+ }
+
+ #servicios1 .fila .servicio {
+     max-width: 250px;
+     background-color: #fff;
+     padding: 30px;
+     margin: 0 5px;
+     border-radius: 5px;
+     transition: .5s;
+ }
+
+ #servicios1 .fila .servicio .icono {
+     display: inline-block;
+     width: 170px;
+     height: 170px;
+     border-radius: 50%;
+     background-color: #adadad;
+     padding: 70px;
+     color: #ff1010;
+     margin-bottom: 25px;
+ }
+
+ #servicios1 .fila .servicio .ico {
+     font-size: 25px;
+     color: #ffffff;
+     background-color: #10e7ff;
+     border: none;
+     padding: 10px;
+
+ }
+
+ #servicios1 .fila .servicio h4 {
+     font-size: 22px;
+     margin-bottom: 25px;
+ }
+
+ #servicios1 .fila .servicio hr {
+     width: 30%;
+     margin: auto;
+     color: #000;
+     margin-bottom: 25px;
+ }
+
+ #servicios1 .fila .servicio ul {
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     margin-bottom: 10px;
+ }
+
+ #servicios1 .fila .servicio p {
+     font-size: 14px;
+     line-height: 22px;
+ }
+
+ /*servicio 2*/
+ #servicios2 {
+     padding: 100px 15px;
+     text-align: center;
+     background-color: #dbd8d8;
+ }
+
+ #servicios2 .fila {
+     display: flex;
+     justify-content: space-between;
+     max-width: 1150px;
+
+
+ }
+
+ #servicios2 .fila .servicio {
+     max-width: 250px;
+     background-color: #dbd8d8;
+     padding: 50px;
+     margin: none;
+     padding: 40px;
+
+ }
+
+ #servicios2 .fila .servicio .icono {
+     display: inline-block;
+     border-radius: 1%;
+     text-align: center;
+     width: 300px;
+     background-color: #595757;
+     padding: 20px;
+     color: #fdffff;
+     margin-bottom: none;
+
+ }
+
+ #servicios2 .fila .servicio .icono2 {
+     display: inline-block;
+     border-radius: 1%;
+     text-align: center;
+     width: 300px;
+     background-color: #18f0ff;
+     padding: 20px;
+     color: #fdffff;
+     margin-bottom: none;
+
+ }
+
+ #servicios2 .fila .servicio .icono1 {
+     display: inline-block;
+     border-radius: 1%;
+     border: 1px solid #aca8a8;
+     text-align: center;
+     width: 300px;
+     background-color: #ffffff;
+     padding: 20px;
+     color: #4c4c4c;
+     margin-bottom: none;
+     font-size: 12px;
+
+
+ }
+
+ #servicios2 .fila .servicio .ico {
+     display: block;
+     margin: auto;
+     cursor: pointer;
+     transition: .5s;
+     padding: 10px 15px !important;
+     background-color: #616161;
+     color: floralwhite;
+     font-size: 15px;
+     border: 15px;
+     padding: 10px;
+     text-align: center;
+     border-radius: 10px;
+ }
+
+
+ #servicios2 .fila .servicio .ico1 {
+     display: block;
+     margin: auto;
+     cursor: pointer;
+     transition: .5s;
+     padding: 10px 15px !important;
+     background-color: #29fbff;
+     color: floralwhite;
+     font-size: 15px;
+     border: 15px;
+     padding: 10px;
+     text-align: center;
+     border-radius: 10px;
+ }
+
+ /* SECCIÓN C O N T A C T O */
+ .contacto {
+     background:
+         linear-gradient(rgba(0, 12, 103, 0.032), rgba(0, 12, 103, 0)),
+         url(img/op9.jpg);
+     background-size: cover;
+     color: #ffffff;
+     margin-top: 100px;
+     padding: 80px 20px;
+ }
+
+ .contacto .contenedor-contacto {
+     max-width: 1100px;
+     margin: auto;
+ }
+
+ .contacto h2 {
+     text-align: center;
+     padding-bottom: 30px;
+ }
+
+ .contacto .contenedor-contacto .fila {
+     display: flex;
+ }
+
+ .contacto .contenedor-contacto .fila .col {
+     width: 50%;
+ }
+
+ .contacto .contenedor-contacto .info {
+     margin-bottom: 30px;
+     border-left: 3px solid #fffefe;
+     padding-left: 8px;
+ }
+
+ .contacto .contenedor-contacto .info1 {
+     margin-bottom: 30px;
+     border-left: 3px solid #ffffff;
+     padding-left: 8px;
+ }
+
+ .contacto .contenedor-contacto .info p {
+     color: #fffbfb;
+ }
+
+ .contacto input,
+ .contacto textarea {
+     width: 100%;
+     border: none;
+     background-color: transparent;
+     padding: 10px;
+     border: 1px solid #ffffff;
+     margin-bottom: 20px;
+     outline: none;
+     color: #ffffff;
+     background-color: #fffefea5;
+ }
+
+ .contacto .btn {
+     background-color: none;
+     padding: 5px 20px;
+     border: 2px solid;
+     color: #fff;
+     cursor: pointer;
+     background: linear-gradient(to right, #1a98ec, #16ecff);
+ }
+
+ .contacto .a1 {
+     text-decoration: none;
+     color: #ff1e1e;
+     display: inline-block;
+     margin: 5px;
+     font-size: 36px;
+ }
+
+ .contacto .a2 {
+     text-decoration: none;
+     color: #3849ff;
+     display: inline-block;
+     margin: 5px;
+     font-size: 36px;
+ }
+
+ .contacto .a3 {
+     text-decoration: none;
+     color: #d00f6f;
+     display: inline-block;
+     margin: 5px;
+     font-size: 36px;
+ }
+
+ /* *********************/
+ /* seccion F O O T E R */
+ /* *********************/
+
+ footer {
+     background-color: #000;
+     color: #fff;
+     text-align: center;
+     padding: 30px 0;
+ }
+
+ footer a {
+     text-decoration: none;
+     color: #fff;
+     display: inline-block;
+     margin: 5px;
+     font-size: 26px;
+ }
+
+ /* *********************/
+ /* seccion R E S P O N S I V E */
+ /* *********************/
+
+ @media screen and (max-width: 800px) {
+     .redes {
+         display: none;
+     }
+
+     nav {
+         display: none;
+     }
+
+     nav.responsive {
+         display: block;
+         background-color: rgba(0, 0, 0, .8);
+         width: 100%;
+         position: absolute;
+         top: 48px;
+         left: 0;
+         padding: 10px 0;
+     }
+
+     nav.responsive ul {
+         display: block !important;
+         text-align: center;
+     }
+
+     nav.responsive ul li {
+         margin: 5px 0;
+     }
+
+     #icono-nav {
+         display: block;
+     }
+
+     #inicio .contenido .presentacion h2 {
+         font-size: 40px;
+     }
+
+     /* seccion SOBRE MI */
+     #sobremi {
+         padding: 50px 0;
+         display: block;
+     }
+
+     #sobremi .contenedor-foto {
+         max-width: 200px;
+         margin: auto;
+     }
+
+     #sobremi .contenedor-foto img {
+         padding: 8px;
+     }
+
+     #sobremi .sobremi .titulo-seccion {
+         text-align: center;
+     }
+
+     #sobremi .sobremi h2 {
+         font-size: 25px;
+         text-align: center;
+     }
+
+     /* seccion MIS SERVICIOS */
+     #servicios {
+         padding: 50px 15px;
+     }
+
+     #servicios .fila {
+         display: block;
+     }
+
+     #servicios .fila .servicio {
+         margin: 10px auto;
+     }
+
+     /* seccion MIS SERVICIOS */
+     #servicios1 {
+         padding: 50px 15px;
+     }
+
+     #servicios1 .fila {
+         display: block;
+     }
+
+     #servicios1 .fila .servicio {
+         margin: 10px auto;
+     }
+
+     /*servicios 2*/
+     #servicios2 {
+         padding: 50px 15px;
+     }
+
+     #servicios2 .fila {
+         display: block;
+     }
+
+     #servicios2 .fila .servicio {
+         margin: 10px auto;
+     }
+
+     /* seccion HABLIDADES MI */
+     .contenedor-skills {
+         padding: 50px 20px;
+     }
+
+     /* seccion PORTFOLIO */
+     #portfolio {
+         padding: 50px 0;
+     }
+
+     #portfolio .fila {
+         display: block;
+     }
+
+     #portfolio .fila .proyecto {
+         margin: 10px auto;
+     }
+
+     /* seccion CONTACTO */
+     #contacto {
+         padding: 50px 15px;
+     }
+
+     #contacto .contenedor-form .mitad {
+         margin-bottom: 15px;
+         display: block;
+     }
+
+     #contacto .contenedor-form .mitad input {
+         width: 100%;
+         margin-bottom: 15px;
+     }
+ }
