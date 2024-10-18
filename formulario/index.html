@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>formulario</title>
+</head>
+<body>
+    <h1>formulario de Ejemplo</h1>
+    <p>abrir en las herramientas de desarrollo(<kbd>F12</kbd>) y acceder a la pestaña de red</p>
+    <form action="receptor.html" method="get">
+       <fieldset>
+        <legend>datos personales  </legend>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div> 
+        <div>
+            <label for="email">correo electronico</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="contraseña">contraseña</label>
+            <input type="password" id="contraseña" name="contraseña">
+        </div>
+        <div>
+            <label>genero </label><br>
+            <input type="radio" id="genero_masculino"  name="genero" value="masculino"></input>
+            <label for="genero_masculino">masculino</label><br>
+            <input type="radio" id="genero_mujer" name="genero" value="mujer"></input>
+            <label for="genero_mujer">mujer</label><br>
+            <input type="radio" id="genero_otro" name="genero" value="otro">
+            <label for="genero_otro">otro</label><br>
+
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Datos complementarios</legend>
+        <div>
+            <label>Intereses:</label><br>
+            <input type="checkbox" id="interes_1" name="intereses[]" value="deportes">
+            <label for="interes_1">Deportes</label><br>
+            <input type="checkbox" id="interes_2" name="intereses[]" value="tecnologia">
+            <label for="interes_2">Tecnología</label><br>
+            <input type="checkbox" id="interes_3" name="intereses[]" value="viajes">
+            <label for="interes_3">Viajes</label>
+          </div>
+          <div>
+            <label for="pais">País</label>
+            <select name="pais" id="pais"></select>
+            <option value="usa">Estados unidos</option>
+            <option value="mexico">mexico</option>
+            <option value="españa">españa</option>
+            <option value="argentina">argentina</option>
+          </div>
+          <div>
+            <label for="color_favorito">Color Favorito:</label>
+            <input list="colores" id="color_favorito" name="color_favorito">
+            <datalist id="colores">
+              <option value="Rojo">
+              <option value="Verde">
+              <option value="Azul">
+              <option value="Amarillo">
+              <option value="Naranja">
+            </datalist>
+          </div>
+          <div>
+            <label for="archivo">Seleccionar Archivo:</label>
+            <input type="file" id="archivo" name="archivo">
+          </div>
+    </fieldset>
+    <div>
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+</body>
+</html>
