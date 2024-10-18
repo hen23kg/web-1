@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #161616;
+    }
+    .contenedor {
+        max-width: 300px;
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+         .formulario input {
+            display: block;
+            margin: 10px auto;
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #d5cfcf;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .formulario input[type="button"] {
+            background-color: #1172d9;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+
+        }
+        .formulario input[type="button"]:hover {
+            background-color: #1176e2;
+        }
+        .recordar {
+            margin-top: 20px;
+        }
+        .recordar a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .recordar a:hover {
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+    <main class="contenedor">
+        <div id="logo">
+            <img src="logo-captura.png" alt="log">
+        </div>
+        <div class="ingreso">
+            <h1 id="ingreso">Ingreso</h1>
+        </div>
+        <section class="formulario">
+            <form action="#">
+                <input type="text" placeholder="Codigo de Usuario">
+                <input type="password" placeholder="contraseña:">
+                <input type="button" value="ENTRAR">
+            </form>
+        </section>
+        
+        <P>No puede recordar su contraseña?</P>
+        <div class="recordar">
+            <p id="contraseña"></p>
+            <a href="recuperar contraseña">recuperar contraseña</a>
+        </div>
+    </main>
+</body>
+</html>
